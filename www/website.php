@@ -12,7 +12,7 @@
                 if($isMale && $isTall){
                   echo "you are male and tall";
                 }else{
-                  echo "you are not male and tall";
+                  echo "you are not male or tall";
                 }
                         ?>
 
