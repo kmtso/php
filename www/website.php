@@ -7,14 +7,16 @@
   <body>
 
                <?php
-                function getMax($num1,$num2){ // max (num1, num2)
-                  if ($num1>$num2){
+                function getMax($num1,$num2,$num3){ // max (num1, num2)
+                  if ($num1>=$num2 && $num1>=$num3){
                     return $num1;
-                  }else{
+                  }elseif( ($num2>$num1 && $num2>$num3)){
                     return $num2;
+                  }else{
+                    return $num3;
                   }
                 }
-                echo getMax(7,4);
+                echo getMax(97,104,87);
                         ?>
 
                  </body>
