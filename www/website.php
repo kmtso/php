@@ -37,9 +37,15 @@ class Book {
     else
       $this->rating=-1;
   }
+
+}
+class AmericanBook extends Book{ //inheritance
+  function getAuthor(){
+    echo $this->author;
+  }
 }
   $book1 = new Book("Harry Potter","JK ROWLING",700,5);
-
+ $usBook= new AmericanBook("Hunger Games","X",500,3);
   echo "$book1->title<br>";
   echo $book1->getPagesRange();
   echo "<br>";
@@ -49,7 +55,11 @@ class Book {
   echo $book1->getRating();
   echo "<br>";
   $book1->setRating(100);
-  echo $book1->getRating();?>
+  echo $book1->getRating();
+  echo "<br>";
+  echo $usBook->getAuthor();
+  ?>
+
 <?php include "footer.html" ?>
 
                  </body>
