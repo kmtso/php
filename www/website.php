@@ -5,19 +5,13 @@
     <title></title>
   </head>
   <body>
-
-               <form action="website.php" method="post">
-
-                apples:<input type="checkbox" name="fruits[]" value="apples"><br>
-                oranges:<input type="checkbox" name="fruits[]" value="oranges"><br>
-                pears:<input type="checkbox" name="fruits[]" value="pears"> <br>
-
-                <input type="submit">
-               </form>
+ <form action="website.php" method="post">
+   <input type="text" name="studentName">
+   <input type="submit">
+  </form>
                <?php
-               $fruits=$_POST["fruits"];
-
-               echo $fruits[0]; // first element 
+               $grades = array('Jim' => 'A', 'Ming'=>'A+','Ben'=>'C' ); //(key=>value)
+               echo $grades[$_POST['studentName']];
                         ?>
 
                  </body>
