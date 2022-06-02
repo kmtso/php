@@ -6,12 +6,15 @@
   </head>
   <body>
  <form action="website.php" method="post">
-   <input type="text" name="studentName">
+   <input type="text" name="name">
    <input type="submit">
   </form>
                <?php
-               $grades = array('Jim' => 'A', 'Ming'=>'A+','Ben'=>'C' ); //(key=>value)
-               echo $grades[$_POST['studentName']];
+                  function sayHi($name){
+                    echo "Hello $name!<br>";
+                  }
+                  sayHi($_POST['name']);
+                  sayHi("Sir/Madam")
                         ?>
 
                  </body>
