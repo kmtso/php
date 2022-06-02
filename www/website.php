@@ -5,19 +5,30 @@
     <title></title>
   </head>
   <body>
+    <form action ="website.php" method="post">
+      Num1    :<input type='number' name= 'num1'><br>
+      operator:<input type='text' name= 'op'><br>
+      Num2    :<input type='number' name= 'num2'><br>
+  <input type="submit">
 
+
+    </form>
                <?php
-                function getMax($num1,$num2,$num3){ // max (num1, num2)
-                  if ($num1>=$num2 && $num1>=$num3){
-                    return $num1;
-                  }elseif( ($num2>$num1 && $num2>$num3)){
-                    return $num2;
-                  }else{
-                    return $num3;
-                  }
-                }
-                echo getMax(97,104,87);
-                        ?>
+
+                $num1 = $_POST['num1'];
+                $num2 = $_POST['num2'];
+               $op=$_POST["op"];
+               if($op=="*"){
+                 echo $num1*$num2;
+               }elseif($op=='/'){
+                   echo $num1/$num2;
+                 }elseif($op=='-'){
+                     echo $num1-$num2;
+                   }elseif($op=='+'){
+                       echo $num1+$num2;
+                     }else{
+                       echo "invalid operator";
+                     }                           ?>
 
                  </body>
 </html>
