@@ -7,13 +7,14 @@
   <body>
 
                <?php
-                $isMale =true;
-                $isTall=false;
-                if($isMale && $isTall){
-                  echo "you are male and tall";
-                }elseif($isMale && !$isTall){
-                  echo "you are a short male";
+                function getMax($num1,$num2){ // max (num1, num2)
+                  if ($num1>$num2){
+                    return $num1;
+                  }else{
+                    return $num2;
+                  }
                 }
+                echo getMax(7,4);
                         ?>
 
                  </body>
