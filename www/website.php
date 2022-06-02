@@ -6,9 +6,9 @@
   </head>
   <body>
     <form action ="website.php" method="post">
-      Num1    :<input type='number' name= 'num1'><br>
+      Num1    :<input type='number' step="0.001" name= 'num1'><br>
       operator:<input type='text' name= 'op'><br>
-      Num2    :<input type='number' name= 'num2'><br>
+      Num2    :<input type='number'step="0.001"  name= 'num2'><br>
   <input type="submit">
 
 
