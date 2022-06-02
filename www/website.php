@@ -5,16 +5,15 @@
     <title></title>
   </head>
   <body>
- <form action="website.php" method="post">
-   <input type="number" name="num">
-   <input type="submit">
-  </form>
-               <?php
-                  function cube($num){
-                    return $num*$num*$num;
-                  }
-                  echo cube($_POST['num']);
 
+               <?php
+                $isMale =true;
+                $isTall=true;
+                if($isMale && $isTall){
+                  echo "you are male and tall";
+                }else{
+                  echo "you are not male and tall";
+                }
                         ?>
 
                  </body>
