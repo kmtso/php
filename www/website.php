@@ -8,11 +8,11 @@
 
                <?php
                 $isMale =true;
-                $isTall=true;
+                $isTall=false;
                 if($isMale && $isTall){
                   echo "you are male and tall";
-                }else{
-                  echo "you are not male or tall";
+                }elseif($isMale && !$isTall){
+                  echo "you are a short male";
                 }
                         ?>
 
