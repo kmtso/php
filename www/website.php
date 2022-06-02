@@ -19,11 +19,18 @@ class Book {
     $this -> pages =$pages;
   }
 
-
+  function getPagesRange(){
+    if ($this->pages<=500){
+      return "less than or equal to 500 pages";
+    }else{
+      return "larger than 500 pages";
+    }
+  }
 }
-  $book1 = new Book("Harry Potter","JK ROWLING",400);
+  $book1 = new Book("Harry Potter","JK ROWLING",700);
 
   echo "$book1->title<br>";
+  echo $book1->getPagesRange();
 
 ?>
 <?php include "footer.html" ?>
