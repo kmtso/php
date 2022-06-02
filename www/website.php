@@ -6,15 +6,15 @@
   </head>
   <body>
  <form action="website.php" method="post">
-   <input type="text" name="name">
+   <input type="number" name="num">
    <input type="submit">
   </form>
                <?php
-                  function sayHi($name){
-                    echo "Hello $name!<br>";
+                  function cube($num){
+                    return $num*$num*$num;
                   }
-                  sayHi($_POST['name']);
-                  sayHi("Sir/Madam")
+                  echo cube($_POST['num']);
+
                         ?>
 
                  </body>
